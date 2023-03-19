@@ -30,7 +30,7 @@
             ощутимую прибыль. В чем секрет? В чем формула успеха? Узнайте на предстоящем двухдневном <span>БЕСПЛАТНОМ</span> интенсиве!
         </div>
 
-        <button class="promo_btn">Записаться на интенсив!</button>
+        <button data-modal="consultation" class="promo_btn">Записаться на интенсив!</button>
 
         <div class="more">
             <div class="more_text">узнать больше об интенсиве</div>
@@ -139,7 +139,7 @@
         забирайте свой приз по окончании обучения!
         </div>
 
-        <button class="present_btn">Записаться на интенсив!</button>
+        <button data-modal="consultation" class="present_btn">Записаться на интенсив!</button>
     </div>
 </section>
 
@@ -164,5 +164,23 @@
     </div>
 </section>
 
+<div class="overlay">
+    <div class="modal" id="consultation">
+        <div class="modal_close">&times;</div>
+        <div class="modal_tittle">Просто заполните форму заявки</div>
+        <div class="modal_subtittle">и мы перезвоним вам в течении 10 минут</div>
+        <form class="feed-form" action="#">
+            <input name="name" placeholder="Ваше имя" type="text">
+            <input name="phone" placeholder="Ваш номер">
+            <input name="email" placeholder="Ваша почта" type="text">
+
+            <button class="modal_btn">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</button>
+        </form>
+    </div>
+</div>
+
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
